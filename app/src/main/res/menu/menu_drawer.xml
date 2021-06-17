@@ -24,6 +24,11 @@
             android:icon="@drawable/ic_history"/>
 
         <item
+            android:id="@+id/customerSupport"
+            android:title="Customer Support"
+            android:icon="@drawable/ic_customer_support"/>
+
+        <item
             android:id="@+id/faq"
             android:title="FAQs"
             android:icon="@drawable/ic_faq"/>

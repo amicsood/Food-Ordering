@@ -5,10 +5,8 @@ import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
 import android.view.LayoutInflater
 import android.view.MenuItem
-import android.view.inputmethod.InputMethodManager
 import android.widget.FrameLayout
 import android.widget.TextView
 import android.widget.Toast
@@ -21,7 +19,6 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import com.samael.foodordering.fragment.*
 import com.samael.foodordering.R
-import org.json.JSONObject
 
 class DashboardActivity : AppCompatActivity() {
 
@@ -124,6 +121,13 @@ class DashboardActivity : AppCompatActivity() {
                         .replace(R.id.frameLayout, OrderHistoryFragment()).commit()
                     drawerLayout.closeDrawers()
                     supportActionBar?.title = "Order History"
+                }
+
+                R.id.customerSupport -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.frameLayout, CustomerSupportFragment()).commit()
+                    drawerLayout.closeDrawers()
+                    supportActionBar?.title = "Customer Support"
                 }
 
                 R.id.faq -> {
