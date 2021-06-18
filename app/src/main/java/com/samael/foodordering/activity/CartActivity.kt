@@ -144,7 +144,7 @@ class CartActivity : AppCompatActivity() {
                     {
                         ClearCart(this@CartActivity,restaurantId.toString()).execute().get()
 
-                        val intent= Intent(this@CartActivity,ConfirmationActivity::class.java)
+                        val intent= Intent(this@CartActivity,PaymentActivity::class.java)
                         startActivity(intent)
                         finish()
 

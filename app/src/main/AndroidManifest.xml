@@ -17,6 +17,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:targetApi="n">
+        <activity android:name=".activity.DeclinedOrderActivity"></activity>
+        <activity android:name=".activity.FailureActivity" />
+        <activity android:name=".activity.PaymentControlActivity" />
+        <activity android:name=".activity.PaymentActivity" />
         <activity
             android:name=".activity.RestaurantDetailActivity"
             android:configChanges="orientation|screenSize"

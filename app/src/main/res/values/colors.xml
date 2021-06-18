@@ -6,4 +6,6 @@
     <color name="colorAccent">#cb202d</color>
     <color name="cart_button">#4CAF50</color>
     <color name="background">#ffffff</color>
+    <color name="red">#C50B0B</color>
+    <color name="green">#219721</color>
 </resources>
